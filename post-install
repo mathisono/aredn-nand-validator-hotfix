@@ -1,0 +1,4 @@
+#!/bin/sh
+# APK lifecycle hook. The patcher is idempotent and refuses unknown scripts.
+set -eu
+exec /usr/libexec/aredn-nand-validator-hotfix/patch-aredn-nand-validator.sh
